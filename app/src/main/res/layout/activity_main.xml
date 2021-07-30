@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/btn"
+       android:layout_gravity="center"
+       android:text="Scan"></Button>
+
+   <com.airbnb.lottie.LottieAnimationView
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:visibility="gone"
+       android:layout_gravity="center"
+       android:scaleType="centerCrop"
+       android:layout_centerInParent="true"
+       android:id="@+id/animation_view"
+       app:lottie_rawRes="@raw/tick"
+       app:lottie_autoPlay="true"
+       app:lottie_loop="true"/>
+
+
+   <include layout="@layout/persistent_bottom_sheet"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
